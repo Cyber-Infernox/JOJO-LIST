@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div>
@@ -18,6 +20,7 @@ export default function Home() {
         ipsa! Rerum tenetur dolore quam quibusdam ad fugiat dolorem molestiae
         fuga laboriosam laudantium, explicabo dolorum?
       </p>
+      <Link href="/Pages/Listing">Listing</Link>
     </div>
   );
 }
