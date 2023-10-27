@@ -1,8 +1,7 @@
-// Style
-// import styles from "./page.module.css";
-import "./page.css";
-
 import Link from "next/link";
+
+// Style
+import "./page.css";
 
 export default function Home() {
   return (
