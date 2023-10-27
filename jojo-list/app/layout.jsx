@@ -1,11 +1,14 @@
-import { Inter } from "next/font/google";
+// Style
 import "./globals.css";
+
+// Font
+import { Rubik } from "next/font/google";
 
 // Components
 import Footer from "./Components/Footer/page";
 import Navbar from "./Components/Navbar/page";
 
-const inter = Inter({ subsets: ["latin"] });
+const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata = {
   title: "JOJO LIST",
@@ -15,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={rubik.className}>
         <Navbar />
         {children}
         <Footer />
