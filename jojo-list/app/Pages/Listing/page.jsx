@@ -2,6 +2,8 @@ export const metadata = {
   title: "Listing",
 };
 
+import Link from "next/link";
+
 // Style
 import "./Listing.css";
 
@@ -22,11 +24,9 @@ const Listing = async () => {
     <div>
       <h2>Listing...</h2>
       {nameList.map((jojo) => (
-        <div key={jojo.id}>
-          <a className="single">
-            <h3>{jojo.name}</h3>
-          </a>
-        </div>
+        <Link className="single" href={`Listing/${jojo.id}`} key={jojo.id}>
+          <h3>{jojo.name}</h3>
+        </Link>
       ))}
     </div>
   );
